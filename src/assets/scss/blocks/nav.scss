@@ -1,0 +1,17 @@
+.nav {
+  &__link {
+    transition: all 0.3s linear;
+
+    &:hover {
+      color: $pink-light;
+    }
+  }
+  & li &__link {
+    cursor: pointer;
+
+    display: block;
+
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}

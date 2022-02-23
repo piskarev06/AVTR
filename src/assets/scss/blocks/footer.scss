@@ -1,0 +1,31 @@
+.footer {
+  padding: 130px 0;
+  background: #070a1b;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint(768px) {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  &__policy {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__logo {
+    margin: 0;
+  }
+
+  @include breakpoint(1360px) {
+    padding: 70px 0;
+  }
+  @include breakpoint(992px) {
+    padding: 50px 0;
+  }
+}

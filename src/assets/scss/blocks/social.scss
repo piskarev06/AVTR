@@ -1,0 +1,33 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    border-radius: 50%;
+    padding: 7px;
+
+    transition: all 0.3s linear;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &:hover {
+      background-color: $pink-light;
+    }
+  }
+
+  &--header {
+    @include breakpoint(768px) {
+      display: none;
+    }
+  }
+  &--mobile {
+    display: none;
+
+    @include breakpoint(768px) {
+      display: flex;
+    }
+  }
+}
