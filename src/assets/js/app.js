@@ -57,14 +57,10 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 
-  slidesPerView: 4,
-  spaceBetween: 60,
+  slidesPerView: 1,
+  spaceBetween: 30,
 
   breakpoints: {
-    480: {
-      slidesPerView: 1,
-      spaceBetween: 30,
-    },
     640: {
       slidesPerView: 2,
       spaceBetween: 40,
@@ -76,6 +72,10 @@ const swiper = new Swiper('.swiper', {
     1360: {
       slidesPerView: 4,
       spaceBetween: 60,
+    },
+    1921: {
+      slidesPerView: 5,
+      spaceBetween: 70,
     },
   },
 })

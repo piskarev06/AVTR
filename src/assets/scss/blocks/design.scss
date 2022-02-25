@@ -62,9 +62,7 @@
   &__img {
     max-width: 100%;
 
-    &:first-child {
-      grid-column: 2/-1;
-    }
+    grid-column: 2/-1;
   }
 
   &__cell-1 {

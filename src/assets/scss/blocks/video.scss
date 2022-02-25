@@ -25,10 +25,14 @@
 
       margin-right: 9px;
       transform: translateY(5px);
+
+      @include breakpoint(480px) {
+        width: 17px;
+      }
     }
 
     @include breakpoint(480px) {
-      padding: 5px 10px 10px;
+      padding: 10px 10px 11px;
     }
   }
 
